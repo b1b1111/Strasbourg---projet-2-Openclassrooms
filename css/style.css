@@ -1,0 +1,466 @@
+/*
+Theme Name:     theme Wordpress
+Description:    Theme wordpress de Benjamin Lefebvre
+Author:         Benjamin
+Author URI:     http://strasbourg.webagency-lefebvre.fr/
+Template:       catch-responsive
+Version:        1.7.8.5
+*/
+
+/*------------------------GLOBAL--------------------------*/
+html 
+{
+	overflow-x: hidden;
+}
+
+
+/*--------------------------------Typography----------------------------------*/
+
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #bdb8b8;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color:white;
+}
+
+/*--------------------------------------------------------------
+6. Navigation
+--------------------------------------------------------------*/
+.menu-toggle {
+	display: none;
+}
+
+.sidr ul li span,
+.sidr ul li a 
+{
+    display: inline-block !important;
+}
+
+.nav-primary,
+.nav-footer {
+	background-color: #222;
+	position: relative;
+	z-index: 198;
+}
+
+.nav-secondary {
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 197;
+}
+
+.catchresponsive-nav-menu a {
+	color: #fff;
+}
+
+.sidebar-header-right .widget_nav_menu a {
+	color: #222;
+}
+
+.catchresponsive-nav-menu li a:hover,
+.catchresponsive-nav-menu li a:focus,
+.sidebar-header-right .widget_nav_menu li a:hover,
+.sidebar-header-right .widget_nav_menu li a:focus {
+	background-color: #e74c3c;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Hover */
+.catchresponsive-nav-menu li:hover > a {
+	background-color: #e74c3c;
+	color: #000;
+}
+
+.sidebar-header-right .widget_nav_menu li:hover > a {
+	background-color: #222;
+	color: #e74c3c;
+}
+
+/* Hover Parent */
+.catchresponsive-nav-menu .current-menu-item > a,
+.catchresponsive-nav-menu .current-menu-ancestor > a,
+.catchresponsive-nav-menu .current_page_item > a,
+.catchresponsive-nav-menu .current_page_ancestor > a {
+	background-color: #e74c3c;
+	color: #000;
+}
+
+.sidebar-header-right .widget_nav_menu .current-menu-item > a,
+.sidebar-header-right .widget_nav_menu .current-menu-ancestor > a {
+	background-color: #222;
+	color: #e74c3c;
+}
+
+.catchresponsive-nav-menu .sub-menu a,
+.catchresponsive-nav-menu .children a {
+	background-color: #e74c3c;
+	color: #000;
+}
+
+.sidebar-header-right .widget_nav_menu .sub-menu a {
+	background-color: #222;
+	color: #e74c3c;
+}
+
+.sidebar-header-right .widget_nav_menu .sub-menu {
+	border-top: 1px solid #333;
+}
+
+.sidebar-header-right .widget_nav_menu .sub-menu a,
+.sidebar-header-right .widget_nav_menu .sub-menu .sub-menu {
+	border-color: #333;
+}
+
+.nav-secondary .catchresponsive-nav-menu a {
+	color: rgb(59, 58, 58);
+}
+
+.nav-secondary .catchresponsive-nav-menu .sub-menu a,
+.nav-secondary .catchresponsive-nav-menu .children a {
+	background-color: #fff;
+	border-color: #f9f9f9;
+}
+
+.catchresponsive-nav-menu .sub-menu li a:hover,
+.catchresponsive-nav-menu .sub-menu li a:focus,
+.catchresponsive-nav-menu .children li a:hover,
+.catchresponsive-nav-menu .children li a:focus,
+.sidebar-header-right .widget_nav_menu .sub-menu li a:hover,
+.sidebar-header-right .widget_nav_menu .sub-menu li a:focus {
+	background-color: #000;
+	color: #e74c3c;
+}
+
+.catchresponsive-nav-menu .sub-menu .sub-menu,
+.catchresponsive-nav-menu .children .children {
+	border-top: 1px solid #eee;
+	margin: -43px 0 0 249px;
+}
+
+.sidebar-header-right .widget_nav_menu .sub-menu .sub-menu {
+	margin: -43px 249px 0 0;
+}
+
+.nav-secondary .sub-menu .sub-menu,
+.nav-secondary .catchresponsive-nav-menu .children .children  {
+	border-color: #f9f9f9;
+}
+
+/* Menu Search */
+
+#search-toggle {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    height: 46px;
+    line-height: 52px;
+    text-align: center;
+    width: 42px;
+}
+
+#search-toggle:hover {
+	background-color: #fff;
+    color: #000;
+}
+
+#search-container {
+    background-color: #fff;
+}
+
+.nav-primary .search-field {
+	border-color: #eee;
+}
+
+.nav-primary .search-field:focus {
+	border-color: #666;
+	color: #000;
+}
+
+/*---------------------------SLIDER-----------------------------*/
+
+/* jQuery Cycle 2 Custom CSS - Z-index -1 pour faire passer le menu au dessus */
+#feature-slider {
+	display: block;
+    position: relative;
+    padding-bottom: 40px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#feature-slider .cycle-pager {
+    bottom: -9px;
+    left: 20%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    z-index: 100;
+}
+
+#feature-slider .cycle-pager span {
+    font-family: arial;
+    line-height: 20px;
+    width: 14px;
+    height: 10px;
+    display: inline-block;
+    color: #f2f2f2;
+    cursor: pointer;
+    margin: 0 2px;
+}
+/*----------DARK----------*/
+
+a:hover,
+a:focus,
+a:active {
+	color: #918b8b !important;
+	outline: none;
+}
+.catchresponsive-nav-menu a 
+{
+	color: #fff !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea
+{
+	background-color: #222 !important;
+}
+
+body,
+.rtl blockquote {
+    background-color: #333;
+}
+
+body,
+button,
+input,
+textarea,
+#nav-below .wp-pagenavi span.pages,
+#breadcrumb-list a:hover,
+#breadcrumb-list a:hover span,
+#breadcrumb-list .breadcrumb-current {
+	color: #fff;
+}
+#site-generator,
+select
+{
+	color: #222;
+}
+
+
+#promotion-message,
+#featured-content,
+.site-content,
+#breadcrumb-list {
+	background-color: #1b1b1b;
+}
+
+.sidebar-header-right .widget_nav_menu a,
+.site-title a,
+.site-description,
+#promotion-message h2,
+.widget-title,
+.entry-title,
+.entry-title a,
+.page-header .page-title,
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus,
+th {
+	color: #fff;
+}
+
+a,
+.site-title a:hover,
+#site-generator a:hover,
+#feature-slider .cycle-pager span.cycle-pager-active,
+.entry-title a:hover {
+    color: #e4741f;
+}
+
+a:hover,
+#site-generator a {
+	color:#222;
+}
+
+#masthead .search-field {
+	color: #000;
+	-moz-box-shadow: inset 0 2px 5px #ddd, 0 1px 0 #999;
+	-webkit-box-shadow: inset 0 2px 5px #ddd, 0 1px 0 #999;
+	box-shadow: inset 0 2px 5px #ddd, 0 1px 0 #999;
+}
+
+#footer-sidebar  {
+    color: #222;
+}
+
+#site-generator {
+    border-color: #222;
+}
+
+
+#promotion-message,
+#featured-content,
+#featured-post,
+#featured-post #feature-heading,
+#secondary .widget,
+#colophon,
+.blog #main .entry-container,
+.archive #main .entry-container,
+.archive-post-wrap,
+.page-header .page-title,
+#homepage-message,
+.site-content article,
+article.sticky .featured-sticky,
+input[type="text"],
+input[type="email"],
+textarea,
+#footer-sidebar,
+.wp-caption,
+.entry-content table,
+.comment-content table,
+.entry-content th,
+.comment-content th,
+.entry-content td,
+.comment-content td,
+#breadcrumb-list span {
+    border-color: #333;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+article.post-password-required input[type=submit],
+li.bypostauthor cite span {
+	background: none #111;
+	border-color: #333;
+	color: #fff;
+	box-shadow: none;
+    padding: 10px;
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: none #333;
+	border-color: #000;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#supplementary {
+	border-color: #666;
+}
+
+#content #infinite-handle span button,
+#nav-below .wp-pagenavi a,
+#nav-below .wp-pagenavi span {
+    background-color: #444;
+}
+
+#content #infinite-handle span button,
+#nav-below .wp-pagenavi a,
+#nav-below .wp-pagenavi span,
+.page-links span {
+    color: #e4741f;
+}
+
+#content #infinite-handle span button:hover,
+#content #infinite-handle span button:focus,
+#nav-below .wp-pagenavi span.current,
+#nav-below .wp-pagenavi a:hover,
+#nav-below #wp_page_numbers ul li a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/*---------------------------ANIMATION-----------------------------------*/
+@keyframes Head_logo {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(6deg);
+	}
+}
+
+@-webkit-keyframes Head_logo {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(6deg);
+	}
+}
+
+#site-logo:hover,
+.custom-logo:hover {
+	-webkit-animation: Head_logo 1s;
+	animation: Head_logo 1s;
+}
+
+/*-----------------------ACTIVITES DU MOIS--------------------*/
+.footable_parent
+{
+	width: 140% !important;
+	font-size: 0.9em;
+	justify-content: center;
+	color: grey;
+}
+
+
+/*-----------------------------------Responsive Style-----------------------------------*/
+@media screen and (max-width: 767px) {
+	#feature-slider {
+		display: none;
+	}
+
+	.footable_parent {
+		font-size: 0.7em;
+		width: 100% !important;
+	}
+
+	td 
+	{
+		display: block !important;
+		border: none !important;
+	}
+	th 
+	{
+		display: none !important;
+	}
+	
+	.ninja_table_row_0,
+	.ninja_table_row_1,
+	.ninja_table_row_2,
+	.ninja_table_row_3,
+	.ninja_table_row_4,
+	.ninja_table_row_5,
+	.ninja_table_row_6,
+	.ninja_table_row_7,
+	.ninja_table_row_8,
+	.ninja_table_row_9,
+	.ninja_table_row_10,
+	.ninja_table_row_11,
+	.ninja_table_row_12,
+	.ninja_table_row_13,
+	.ninja_table_row_14,
+	.ninja_table_row_15  
+	{
+		border: 1px solid grey;
+	}
+}
